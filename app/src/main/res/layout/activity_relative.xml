@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="10dp"
+    android:background="@color/cardview_dark_background"
+    >
+
+
+    <ImageView
+        android:id="@+id/cp_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/chili"
+        />
+
+
+
+    <TextView
+        android:id="@+id/login_label"
+        android:layout_below="@+id/cp_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_label"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/container_form"
+        android:layout_above="@+id/botao_entrar"
+        android:layout_below="@+id/login_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_label"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="40dp"
+            android:paddingVertical="10sp"
+            android:paddingHorizontal="5sp"
+            android:textColorHint="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_below="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite sua senha"
+            android:inputType="textPassword"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="10dp"
+            android:paddingVertical="10sp"
+            android:paddingHorizontal="5sp"
+            android:textColorHint="@color/white"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/botao_entrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF5722"
+        android:text="@string/botao_label" />
+
+
+
+</RelativeLayout>
